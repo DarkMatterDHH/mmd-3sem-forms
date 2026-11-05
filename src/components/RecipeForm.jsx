@@ -1,7 +1,9 @@
 "use client";
+import postRecipe from "../actions/action";
+
 const RecipeForm = () => {
   return (
-    <form>
+    <form action={postRecipe} className="flex flex-col gap-2">
       <input
         type="text"
         name="recipename"
